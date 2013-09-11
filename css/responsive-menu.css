@@ -1,3 +1,21 @@
+#menu-toggle {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
 #menu-toggle:not(:checked) ~ .menu {
 	display: none;
+}
+
+#menu-toggle:not(:checked) + label[for=menu-toggle]:before {
+	content: "show ";
+}
+
+#menu-toggle:checked + label[for=menu-toggle]:before {
+	content: "hide ";
+}
+
+#menu-toggle:focus + label[for=menu-toggle], #menu-toggle:active + label[for=menu-toggle] {
+	outline: #000 dotted thin;
 }
