@@ -30,24 +30,24 @@
 	display: none;
 }
 
-#menu-toggle {
+[id^=menu-toggle] {
 	position: absolute;
 	top: -9999px;
 	left: -9999px;
 }
 
-#menu-toggle:not(:checked) ~ .menu {
+[id^=menu-toggle]:not(:checked) ~ .menu {
 	display: none;
 }
 
-#menu-toggle:not(:checked) + label[for=menu-toggle]:before {
+[id^=menu-toggle]:not(:checked) + label[for=menu-toggle]:before {
 	content: "show ";
 }
 
-#menu-toggle:checked + label[for=menu-toggle]:before {
+[id^=menu-toggle]:checked + label[for=menu-toggle]:before {
 	content: "hide ";
 }
 
-#menu-toggle:focus + label[for=menu-toggle], #menu-toggle:active + label[for=menu-toggle] {
+[id^=menu-toggle]:focus + label[for=menu-toggle], [id^=menu-toggle]:active + label[for=menu-toggle] {
 	outline: #000 dotted thin;
 }
