@@ -1,6 +1,11 @@
 /**
  *	Menu layout
  */
+
+.menu.horizontal > .menu-item {
+	display: inline-block;
+}
+
 @media (min-width: 768px) {
 	.menu.multicol {
 		-moz-column-count: 2;
