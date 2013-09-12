@@ -26,6 +26,10 @@
  *	Menu toggle mechanism
  */
 
+#nav-menu:not(:target) {
+	display: none;
+}
+
 #menu-toggle {
 	position: absolute;
 	top: -9999px;
